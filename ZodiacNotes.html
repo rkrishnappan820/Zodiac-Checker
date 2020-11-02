@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>Zodiac Checker</title>
+<script>
+function fortune()
+{
+// Logical OR
+// condition 1 condition 2   rsult
+//   T            t        t ---- RUNS
+//  T             f         t -----Runs
+//  F            t         t ------Runs
+//  f           f          f ---- DOES NOT RUN
+// may 12th is tarus (4/20---5/20)
+
+
+
+
+// Logical AND &&
+// condition 2 condition 2      rsult
+//   T            t        t ---- RUNS
+//  T             f         t ----- not Runs
+//  F            t         t ------ not Runs
+//  f           f          f ---- NOT RUN
+
+    var month = document.getElementById("input").value;
+    //alert(month);
+    var day = document.getElementById("input2").value ;
+  //  alert(day);
+
+    if(month == 4 && (day >=20 && day <= 30)|| month == 5 && (day>=1 && day <=20))
+    {// tarus
+      //alert('tarus');
+       var message = "Congrats! You are a Taurus ,you are reliable, patient, practical, devoted, responsible, and stable.";
+       document.getElementById("output").innerHTML = message;
+       document.getElementById("symbol").innerHTML = "<img src = 'Tarus.png' height = '100' width = '100'>";
+    }
+    else if (month == 3 &&( day >= 21 && day <= 31) || month == 4 && (day >=1 && day <=19))
+    {// aries
+      //alert('aries');
+      var aries = "Congrats! You are an Aries, you courageous, determined, honest, passionate, and optimistic.";
+      document.getElementById("output").innerHTML = aries;
+      document.getElementById("symbol").innerHTML = "<img src = 'Aries.png' height = '100' width = '100'>";
+     }
+     else if (month == 5 && day >= 21 && day <=31 || month == 6 && day >=1 && day <=20)
+     {// gem
+       //alert("gem")
+       var gem = "Congrats! You are a Gemini, you are gentle, curious, adaptable, and affectionate. ";
+       document.getElementById("output").innerHTML = gem;
+       document.getElementById("symbol").innerHTML = "<img src ='gemi.png' height ='100' width ='100'>";
+     }
+     else if (month == 6 && day >=21 && day<=30 || month == 7 && day >=1 && day <=22)
+     {// cancer
+       //alert("cancer")
+      var cancer = " Congrats! You are a Cancer, you are loyal, emotional, persuasive, tenacious, and sympathetic. ";
+      document.getElementById("output").innerHTML = cancer;
+      document.getElementById("symbol").innerHTML = "<img src = 'cancer.png' height = '100' width = '100'>";
+     }
+     else if (month == 7 && day >= 23 && day <= 31 || month == 8 && day >= 1 && day <= 22)
+     {//leo
+       //alert("leo")
+       var leo = "Congrats! You are a Leo; You are creative, cheerful, warm-hearted, and passionate. "
+       document.getElementById("output").innerHTML = leo;
+       document.getElementById("symbol").innerHTML = "<img src = 'leos.png' width = '100' height = '100'>"
+     }
+      else if (month == 8 && day >= 23 && day <= 31 || month == 9 && day >= 1 && day <= 22)
+       {// virgo
+         //alert("virgo")
+        var virg = "Congrats! You are a virgo, you are loyal, kind, hardworking, and practical,"
+        document.getElementById("output").innerHTML = virg
+        document.getElementById("symbol").innerHTML = "<img src = 'virgo.png' height = '100' width ='100'>"
+      }
+      else if (month == 9 && day >= 23 && day <= 30 || month == 10 && day >= 1 && day <= 22)
+      {// libra
+        //alert("libra")
+      var libra = "Congrats! You are a Libra, you are social, dipolmatic, gracious, and cooperative.";
+      document.getElementById("output").innerHTML = libra;
+      document.getElementById("symbol").innerHTML = "<img src = 'libra.png' height ='100' width = '100'>"
+      }
+       else if ( month == 10 && day >= 23 & day <= 31 || month == 11 && day >= 1 && day <= 21)
+       {// scorpio
+         //alert("scorpio")
+         var scorpio = "Congrats! You are a scorpio, you are brave, resourceful, passionate, and stubborn."
+        document.getElementById("output").innerHTML = scorpio
+        document.getElementById("symbol").innerHTML = "<img src = 'scorp.png' height = '100' width = '100'>"
+       }
+       else if ( month == 11 && day >= 22 && day <=30 || month == 12 && day >= 1 && day <=21)
+     {// sagittaruis
+       //("sagittaruis")
+       var sagittaruis = "Congrats! You are a sagittaruis, you are generous and idealistic.  ";
+       document.getElementById("output").innerHTML = sagittaruis;
+       document.getElementById("symbol").innerHTML = "<img src = 'sagitt.png' height = '100' width = '100'>"
+       }
+       else if (month == 12 && day >= 22 && day <= 31 || month == 1 && day >= 1 && day <=19 )
+       {// cap
+         //alert("capricorn")
+         var cap = "Congrats! You are a capricorn, you are responsible, diciplined, and self-contolled";
+         document.getElementById("output").innerHTML = cap;
+         document.getElementById("symbol").innerHTML = "<img src = 'cap.png' height = '100' width = '100'>"
+       }
+       else if (month == 1 && day >= 20 && day <= 31 || month == 2 && day >= 1 && day <= 18)
+       {// aqua
+         //alert("aqua")
+         var aqua = "Congrats! You are a aqarius, you are original, independent, progressive, and humaitarian.";
+         document.getElementById("output").innerHTML = aqua;
+         document.getElementById("symbol").innerHTML = "<img src = 'aqua.png' height = '100' width = '100'>"
+       }
+       else if (month == 2 && day >= 19 && day <= 28 || month == 3 && day >= 1 && day <= 20)
+        {// pisces
+        //  alert("pisces")
+          var pis = "Congrats! You are a pisces, you are compassionate, artistic, wise, and gentle.";
+          document.getElementById("output").innerHTML = pis;
+          document.getElementById("symbol").innerHTML = "<img src = 'pis.png' height = '100' width = '100'>"
+       }
+}
+
+
+</script>
+<style>
+
+
+body
+{
+  background-image: url("n.jpg");
+  text-align: center;
+}
+
+#input
+{
+  width: 300;
+  height:30;
+  background-color: #ff9999;
+   border: 3px solid black;
+}
+
+#input2
+ {
+   width: 300;
+   height: 30;
+   background-color: #ff9999;;
+   border: 3px solid black;
+}
+
+h2
+{
+  font-size: 40;
+  font-family: cursive;
+  color: black;
+
+}
+#output
+{
+  font-size: 25;
+  color: black;
+  font-family: cursive;
+}
+img
+{
+ height: 200;
+ width: 200;
+}
+#button
+{
+  background-color: #ff9999;
+  font-size: 16;
+   border: 2px solid black;
+   border-radius: 10px;
+   color:red;
+}
+#button:hover
+{
+  background-color:#ffcc00;
+}
+hr
+{
+  border: 4px solid black;
+  border-radius: 5px;
+}
+
+</style>
+</head>
+
+<body>
+  <h2> Horoscope Checker<h2>
+    <hr>
+    <input type= "text" id = "input" placeholder="Enter a Month">
+    <input type = "text" id = "input2" placeholder="Enter a Day">
+
+
+
+
+    <input type = "button" id = "button" value = "Submit" onclick = "fortune()">
+    <br><br>
+    <span id = "output"></span>
+    <br><br>
+    <span id= "symbol"></span>
+</body>
+</html>
